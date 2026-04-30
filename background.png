@@ -1,8 +1,0 @@
-body {
-  background-image: url('background.png');
-  background-size: cover;          /* Bild füllt den ganzen Bildschirm */
-  background-position: center;     /* zentriert das Bild */
-  background-attachment: fixed;    /* bleibt beim Scrollen stehen */
-  background-repeat: no-repeat;    /* kein mehrfaches Kacheln */
-  color: white;                    /* Text bleibt lesbar */
-}
