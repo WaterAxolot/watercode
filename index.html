@@ -104,6 +104,48 @@ alert("Hallo von Watercode!");
     </pre>
   </div>
 
+  <!-- Kategorie: Robot Karol Python-Lernpfad -->
+  <h2 style="color:#3b82f6; margin-top:40px;">Robot Karol Python-Lernpfad</h2>
+
+  <div class="snippet">
+    <div class="snippet-title">1. Karol starten (Python)</div>
+    <button class="copy-btn" data-target="karol-1">Copy</button>
+    <pre id="karol-1">
+from karol import *
+Karol().run()
+    </pre>
+  </div>
+
+  <div class="snippet">
+    <div class="snippet-title">2. Karol einen Schritt gehen lassen</div>
+    <button class="copy-btn" data-target="karol-2">Copy</button>
+    <pre id="karol-2">
+from karol import *
+k = Karol()
+k.step()
+    </pre>
+  </div>
+
+  <div class="snippet">
+    <div class="snippet-title">3. Karol dreht sich nach links</div>
+    <button class="copy-btn" data-target="karol-3">Copy</button>
+    <pre id="karol-3">
+from karol import *
+k = Karol()
+k.left()
+    </pre>
+  </div>
+
+  <div class="snippet">
+    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <button class="copy-btn" data-target="karol-4">Copy</button>
+    <pre id="karol-4">
+from karol import *
+k = Karol()
+k.putBrick()
+    </pre>
+  </div>
+
   <script>
     document.querySelectorAll('.copy-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -125,48 +167,3 @@ alert("Hallo von Watercode!");
   </script>
 </body>
 </html>
-
-
-
-
-<!-- Kategorie: Robot Karol Python-Lernpfad -->
-<h2 style="color:#3b82f6; margin-top:40px;">Robot Karol Python-Lernpfad</h2>
-
-<div class="snippet">
-  <div class="snippet-title">1. Karol starten (Python)</div>
-  <button class="copy-btn" data-target="karol-1">Copy</button>
-  <pre id="karol-1">
-from karol import *
-Karol().run()
-  </pre>
-</div>
-
-<div class="snippet">
-  <div class="snippet-title">2. Karol einen Schritt gehen lassen</div>
-  <button class="copy-btn" data-target="karol-2">Copy</button>
-  <pre id="karol-2">
-from karol import *
-k = Karol()
-k.step()
-  </pre>
-</div>
-
-<div class="snippet">
-  <div class="snippet-title">3. Karol dreht sich nach links</div>
-  <button class="copy-btn" data-target="karol-3">Copy</button>
-  <pre id="karol-3">
-from karol import *
-k = Karol()
-k.left()
-  </pre>
-</div>
-
-<div class="snippet">
-  <div class="snippet-title">4. Karol baut einen Ziegel</div>
-  <button class="copy-btn" data-target="karol-4">Copy</button>
-  <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
-  </pre>
-</div>
