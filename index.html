@@ -9,7 +9,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #ffffff;
+  background: #00aaff;
   border: none;
   border-radius: 4px;
   padding: 4px 8px;
@@ -20,7 +20,7 @@
 }
 
 .copy-btn:hover {
-  background: #ffffff;
+  background: #0088cc;
 }
 
 .snippet {
@@ -43,12 +43,13 @@
     }
     
     .snippet {
-      background: #111827;
-      border: 1px solid #000000;
-      border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 16px;
-      overflow: auto;
+      background: radial-gradient(circle at top, rgba(53,201,255,0.25), rgba(9,13,30,0.95));
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+      position: relative;
+      overflow: hidden;
     }
 
     .snippet-title {
@@ -57,6 +58,17 @@
       margin-bottom: 8px;
       color: #60a5fa;
     }
+
+    .hero-right {
+      background: radial-gradient(circle at top, rgba(53,201,255,0.25), rgba(9,13,30,0.95));
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+      position: relative;
+      overflow: hidden;
+    }
+	  
 
     pre {
       margin: 0;
@@ -99,8 +111,8 @@
 
 
   <!-- Beispiel Snippet 2 -->
-<div class="snippet">
-    <div class="snippet-title">
+<div class="hero-right">
+    <div class="hero-right">
       <ol>
   <li>Robot Karol – Python-Lernpfad</li>
   <li>........................................................</li>
@@ -704,5 +716,3 @@ function toggleCategory(id) {
   </script>
 </body>
 </html>
-
-  
