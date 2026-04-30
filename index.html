@@ -114,17 +114,88 @@ lirili larila
     </pre>
   </div>
 
-  <!-- Kategorie: Robot Karol Python-Lernpfad -->
-  <h2 style="color:#3b82f6; margin-top:40px;">Robot Karol Python-Lernpfad</h2>
 
-  <div class="snippet">
-    <div class="snippet-title">1. Fehlersuche </div>
-    <button class="copy-btn" data-target="karol-1">Copy</button>
-    <pre id="karol-1">
-print("Hallo, Jackson!")
-print("Ich lerne jetzt Programmieren!")
-    </pre>
+
+<!-- Einklappbare Kategorie: Robot Karol – Python-Lernpfad -->
+<div class="category">
+  <h2 class="category-title" onclick="toggleCategory('karol')">
+    ▶ Robot Karol – Python-Lernpfad
+  </h2>
+
+  <div id="karol" class="category-content" style="display:none;">
+
+    <div class="snippet">
+      <div class="snippet-title">1. Karol starten (Python)</div>
+      <button class="copy-btn" data-target="karol-1">Copy</button>
+      <pre id="karol-1">
+from karol import *
+Karol().run()
+      </pre>
+    </div>
+
+    <div class="snippet">
+      <div class="snippet-title">2. Karol einen Schritt gehen lassen</div>
+      <button class="copy-btn" data-target="karol-2">Copy</button>
+      <pre id="karol-2">
+from karol import *
+k = Karol()
+k.step()
+      </pre>
+    </div>
+
+    <div class="snippet">
+      <div class="snippet-title">3. Karol dreht sich nach links</div>
+      <button class="copy-btn" data-target="karol-3">Copy</button>
+      <pre id="karol-3">
+from karol import *
+k = Karol()
+k.left()
+      </pre>
+    </div>
+
+    <div class="snippet">
+      <div class="snippet-title">4. Karol baut einen Ziegel</div>
+      <button class="copy-btn" data-target="karol-4">Copy</button>
+      <pre id="karol-4">
+from karol import *
+k = Karol()
+k.putBrick()
+      </pre>
+    </div>
+
   </div>
+</div>
+
+<script>
+function toggleCategory(id) {
+  const content = document.getElementById(id);
+  const title = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    title.innerHTML = "▼ " + title.innerHTML.substring(2);
+  } else {
+    content.style.display = "none";
+    title.innerHTML = "▶ " + title.innerHTML.substring(2);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 
   <div class="snippet">
     <div class="snippet-title">2. Vorgeschichte </div>
