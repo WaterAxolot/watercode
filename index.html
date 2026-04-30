@@ -357,115 +357,288 @@ if A == "Maria":
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. c) Zahlenraten 1 </div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+B = 7
+print("Rate meine Zahl")
+A = int(input())
+if A < B:
+    print("zu niedrig")
+if A > B:
+    print("zu hoch")
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. d) Zahlenraten 2</div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+print("Rate meine Zahl")
+A = 7
+B = int(input())
+if B > A:
+    print("zu hoch")
+elif B < A:
+    print("zu niedrig")
+else:
+    print("WOW! MEGA!")
     </pre>
   </div>
 
    <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4.e) Infizierte</div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+print("Wie viele Monate infiziert?")
+A = int(input())
+
+if A > 60:
+    print("Verstecke dich sofort und bete, dass der Bloater dir einen schnellen Tod bereitet.")
+elif A > 12:
+    print("Das ist ein Clicker.")
+elif A > 2:
+    print("Das ist ein Stalker.")
+else:
+    print("Das ist ein Runner.")
+
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. a) Regenbogen 1 </div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+print("Rate meine Lieblingsfarbe!")
+
+while True:
+    farbe = input()
+    if farbe == "gelb":
+        print("Richtig!")
+        break
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4.b) Regenbogen 2</div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+print("Rate meine Lieblingsfarbe!")
+
+while True:
+    A = input()
+    if A == "violett":
+        print("Richtig!")
+        break
+    else:
+        print("Nein")
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. c) Spaßvogel </div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+print("A, B, C für Witze, x zum Beenden")
+
+while True:
+    eingabe = input()
+    
+    if eingabe == "A":
+        print("Kommt ein Einarmiger in einen Secondhandladen.")
+    elif eingabe == "B":
+        print("Kriegen sich zwei Glatzen in die Haare.")
+    elif eingabe == "C":
+        print("Warum können Skelette schlecht lügen? Weil sie leicht zu durchschauen sind.")
+    elif eingabe == "x":
+        print("Tschüss")
+        break
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. d) Dart (reloaded) </div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+
+print("Spielstart bei 201 Punkten")
+punkte = 201
+
+while True:
+    wurf = int(input())
+
+    if punkte - wurf < 0:
+        print("Überworfen!")
+        continue
+
+    punkte -= wurf
+
+    if punkte == 0:
+        print("Spiel beendet!")
+        break
+    else:
+        print("Noch", punkte)
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. a) Meine Sprache 1 </div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+def begruessung(name):
+    print(f"Hallo{name}")
+
+begruessung("!")
+input()
+def begruessung(name):
+    print(f"Schön {name}")
+
+begruessung("hier")
+def begruessung(name):
+    print(f"Wirklich {name}")
+
+begruessung("schön")
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. b) Meine Sprache 2 </div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+def begruessung(name):
+    print(f"Lalal{name}")
+
+begruessung("a")
+def begruessung(name):
+    print(f"Es ist ein sonniger {name}")
+begruessung("Tag")
+
+input()
+def begruessung(name):
+    print(f"Ich mag die Sonne, aber Regen ist auch {name}")
+
+begruessung("toll.")
     </pre>
   </div>
 
 
      <div class="snippet">
-    <div class="snippet-title">4. Karol baut einen Ziegel</div>
+    <div class="snippet-title">4. c) Schreiender Papagei </div>
     <button class="copy-btn" data-target="karol-4">Copy</button>
     <pre id="karol-4">
-from karol import *
-k = Karol()
-k.putBrick()
+def schreien(text):
+    upper = text.upper()
+    print(f"GR {upper} GR GR")
+
+eingabe = input("Sprich mit dem schreienden Papagei")
+schreien(eingabe)
+    </pre>
+  </div>
+
+  
+     <div class="snippet">
+    <div class="snippet-title">4. d) Geometrie </div>
+    <button class="copy-btn" data-target="karol-4">Copy</button>
+    <pre id="karol-4">
+def umfang(a, b):
+    return 2 * (a + b)
+
+def fläche(a, b):
+    return a * b
+
+a = int(input("Seite a:"))
+b = int(input("Seite b:"))
+U = umfang(a, b)
+A = fläche(a, b)
+print(f"Das Rechteck mit a={a} und b={b} hat Umfang {U} und Fläche {A}.")
     </pre>
   </div>
 
 
   
+     <div class="snippet">
+    <div class="snippet-title">4. a) Patroullie 1 </div>
+    <button class="copy-btn" data-target="karol-4">Copy</button>
+    <pre id="karol-4">
+sicht = int(input("Sicht (m):"))
+wind = int(input("Wind (km/h):"))
+
+if sicht < 100 or wind > 35:
+    print("Wetterwarnung! Alle Teams zurück!")
+else:
+    print("Alles gut")
+    </pre>
+  </div>
+
+
+
+  
+     <div class="snippet">
+    <div class="snippet-title">4. b) Patroullie 2 </div>
+    <button class="copy-btn" data-target="karol-4">Copy</button>
+    <pre id="karol-4">
+sicht = int(input("Sicht (m):"))
+wind = int(input("Wind (km/h):"))
+
+if sicht < 100 or wind > 35:
+    print("Wetterwarnung! Alle Teams zurück!")
+elif sicht < 500 and wind > 25: 
+    print("Gefahr! Heute nur kurze Route!")
+else:
+    print("Alles gut")
+    </pre>
+  </div>
+
+
+
+  
+     <div class="snippet">
+    <div class="snippet-title">4. c) Patroullie 3 </div>
+    <button class="copy-btn" data-target="karol-4">Copy</button>
+    <pre id="karol-4">
+sicht = int(input("Sicht (m):"))
+wind = int(input("Wind (km/h):"))
+temperatur = int(input("Temperatur (°C):"))
+
+if sicht < 100 or wind > 35:
+    print("Wetterwarnung! Alle Teams zurück!")
+elif sicht < 500 and wind > 25: 
+    print("Gefahr! Heute nur kurze Route!")
+elif temperatur < -20:
+    print("Wetterwarnung! Alle Teams zurück!")
+elif temperatur < -10 and wind > 20:
+    print("Gefahr! Heute nur kurze Route!")
+else:
+    print("Alles gut")
+    </pre>
+  </div>
+
+
+
+
+  
+     <div class="snippet">
+    <div class="snippet-title">4.d) Begegnung </div>
+    <button class="copy-btn" data-target="karol-4">Copy</button>
+    <pre id="karol-4">
+anzahl = int(input("Anzahl Infizierte:"))
+entfernung = int(input("Entfernung (m):"))
+
+if anzahl > 5 or entfernung < 10:
+    print("Rennen!")
+else:
+    print("Kämpfen!")
+    </pre>
+  </div>
+
+
 
   <script>
     document.querySelectorAll('.copy-btn').forEach(btn => {
