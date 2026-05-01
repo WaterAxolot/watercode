@@ -5,143 +5,151 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="logo-wrap">
     <img src="watercode-logo-miku.png" alt="WATERCODE Logo" class="logo">
   </div>
 
+  <!-- Text zwischen Logo und Inhaltsverzeichnis -->
+  <p class="subtitle">Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!Willkommen bei Watercode!</p>
+
   <style>
 
-/* Hintergrund */
-body {
-  font-family: system-ui, sans-serif;
-  background-image: url('background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #ffffff;
-  margin: 0;
-  padding: 20px;
-}
+  /* Hintergrund */
+  body {
+    font-family: system-ui, sans-serif;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+  }
 
+  .logo {  
+    max-width: 200px;
+    width: 35%;
+    transform: translateX(-10px);
+    filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.6));
+  }
 
-.logo {  
-  max-width: 200px;
-  width: 35%;
-  transform: translateX(-10px);   /* ← verschiebt das Logo nach links */
-  filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.6));
-}
-.logo {
-  max-width: 1020px;          /* kleiner wie du wolltest */
-  width: 180%;
-}
+  .logo {
+    max-width: 1020px;
+    width: 180%;
+  }
 
+  /* Text unter dem Logo */
+  .subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: -5px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+  }
 
-/* Überschrift */
-h1 {
-  text-align: center;
-  color: #000000;
-  font-size: 32px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
+  /* Überschrift */
+  h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
 
-/* Hero Right Box */
-.hero-right {
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
-  border-radius: 18px;
-  padding: 1.4rem 1.3rem;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.55);
-  width: 40%;
-  margin-left: auto;
-  margin-right: 0;
-  margin-bottom: 20px;
+  /* Hero Right Box */
+  .hero-right {
+    background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+    border-radius: 18px;
+    padding: 1.4rem 1.3rem;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+    width: 40%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: visible;
+  }
 
-  position: relative;
-  overflow: visible;   /* ← WICHTIG */
-}
+  /* Snippet Box */
+  .snippet {
+    position: relative;
+    background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+    border-radius: 18px;
+    padding: 1.4rem 1.3rem;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
 
-}
+  .miku-top {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    pointer-events: none;
+  }
 
-/* Snippet Box */
-.snippet {
-  position: relative;
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
-  border-radius: 18px;
-  padding: 1.4rem 1.3rem;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.55);
-  overflow: hidden;
-  margin-bottom: 20px;
-}
+  .snippet-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000000;
+  }
 
-.miku-top {
-  position: absolute;
-  top: -200px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 200px;
-  pointer-events: none;
-}
+  /* Copy Button */
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00aaff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    transition: 0.2s;
+  }
 
-}
+  .copy-btn:hover {
+    background: #0088cc;
+  }
 
-.snippet-title {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #000000;
-}
+  .copy-btn:active {
+    transform: scale(0.95);
+  }
 
-/* Copy Button */
-.copy-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #00aaff;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 12px;
-  transition: 0.2s;
-}
+  /* Codeblock */
+  pre {
+    margin: 0;
+    font-family: "Fira Code", monospace;
+    font-size: 13px;
+    white-space: pre;
+    color: #e5e7eb;
+  }
 
-.copy-btn:hover {
-  background: #0088cc;
-}
+  /* Kategorie – OHNE KASTEN */
+  .category-title {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
 
-.copy-btn:active {
-  transform: scale(0.95);
-}
-
-/* Codeblock */
-pre {
-  margin: 0;
-  font-family: "Fira Code", monospace;
-  font-size: 13px;
-  white-space: pre;
-  color: #e5e7eb;
-}
-
-/* Kategorie – OHNE KASTEN */
-.category-title {
-  background: none;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  color: #000;
-  font-size: 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.category-content {
-  margin-bottom: 30px;
-}
+  .category-content {
+    margin-bottom: 30px;
+  }
 
   </style>
 
