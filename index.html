@@ -117,253 +117,149 @@
 
 
 
-<!-- Beispiel Snippet 2 -->
-<div class="hero-right cool-box">
-    <ol class="cool-list">
-        <li>Robot Karol – Python-Lernpfad</li>
-        <li>........................................................</li>
-        <li>........................................................</li>
-        <li>........................................................</li>
-        <li>........................................................</li>
-        <li>........................................................</li>
-        <li>........................................................</li>
-        <li>........................................................</li>
-        <li>........................................................</li>
-    </ol>
+<head> 
+  <meta charset="UTF-8">
+  <title>Watercode</title>
 
-    <button class="copy-btn" data-target="code-2">Copy</button>
+  <style>
 
-    <pre id="code-2">
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Meine Seite</title>
-  </head>
-  <body>
-    <h1></h1>
-  </body>
-</html>
-    </pre>
+    /* Hintergrundbild */
+    body {
+      font-family: system-ui, sans-serif;
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
+    }
 
-    <!-- Discord direkt drunter -->
-    <div class="discord-inline">
-        <strong>Discords:</strong>
-        WaterAxolotl#0001 /
-        DevMaster#1234 /
-        CodeWizard#9876
-    </div>
-</div>
+    /* Copy Button */
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #00aaff;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 12px;
+      transition: 0.2s;
+    }
 
+    .copy-btn:active {
+      transform: scale(0.95);
+    }
 
-<!-- Einklappbare Kategorie: Robot Karol – Python-Lernpfad -->
-<div class="category">
-  <h2 class="category-title" onclick="toggleCategory('karol')">
-     Robot Karol – Python-Lernpfad
-  </h2>
+    /* Snippet */
+    .snippet {
+      position: relative;
+      background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+      overflow: hidden;
+    }
 
-  <div id="karol" class="category-content" style="display:none;">
+    .snippet-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #000000;
+    }
 
+    /* Discord */
+    .discord-inline {
+      margin-top: 2px;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
 
+    .discord-inline strong {
+      color: #ff4d4d;
+    }
 
-  <div class="snippet">
-    <div class="snippet-title">1. Fehlersuche </div>
-    <button class="copy-btn" data-target="karol-1">Copy</button>
-    <pre id="karol-1">
-print("Hallo, Jackson!")
-print("Ich lerne jetzt Programmieren!")
-    </pre>
-  </div>
+    /* Überschrift */
+    h1 {
+      text-align: center;
+      color: #000000;
+      font-size: 32px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
 
+    /* Cool Box */
+    .cool-box {
+      padding: 20px;
+      background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+      border-radius: 14px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
 
-  <div class="snippet">
-    <div class="snippet-title">2. Vorgeschichte </div>
-    <button class="copy-btn" data-target="karol-2">Copy</button>
-    <pre id="karol-2">
-print("Vorgeschichte: Eine Infektion breitet sich über die Welt aus und lässt Menschen zu Zombies mutieren.")
+    .cool-list li {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
 
-print("Große Teile der Zivilisation gehen unter, die wenigen Menschen kämpfen hart um ihr Überleben.")
+    /* Hero Right */
+    .hero-right {
+      background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+      width: 40%;
+      margin-left: auto;
+      margin-right: 0;
+      position: relative;
+      overflow: hidden;
+    }
 
-print("Jackson ist eine kleine Oase in dieser chaotischen Welt, wo eine Gemeinschaft sich ein Zuhause gebaut hat.")
+    /* Codeblock */
+    pre {
+      margin: 0;
+      font-family: "Fira Code", monospace;
+      font-size: 13px;
+      white-space: pre;
+      color: #e5e7eb;
+    }
 
-print("Ellie und Joel (nicht verwandt) kehren nach ihrer großen Reise nach Jackson zurück. Joels Bruder Tommy wohnt hier mit seiner Frau Maria.")
-    </pre>
-  </div>
-
-  <div class="snippet">
-    <div class="snippet-title">3. a) Flachwitz </div>
-    <button class="copy-btn" data-target="karol-3">Copy</button>
-    <pre id="karol-3">
-print("Wie nennt man einen Bumerang, der nicht zurückkommt?")
-name = input()
-print("Stock")
-print("Haha")
-    </pre>
-  </div>
-
-  <div class="snippet">
-    <div class="snippet-title">4. b) Papagei </div>
-    <button class="copy-btn" data-target="karol-4">Copy</button>
-    <pre id="karol-4">
-print("Ich bin ein Papagei.")
-word = input()
-print(word)
-    </pre>
-  </div>
-
-   <div class="snippet">
-    <div class="snippet-title">5. c) Echo </div>
-    <button class="copy-btn" data-target="karol-5">Copy</button>
-    <pre id="karol-5">
-wort = input()
-print(wort)
-print(wort)
-print(wort)
-    </pre>
-  </div>
-
-
-   <div class="snippet">
-    <div class="snippet-title">6. a) Schleife </div>
-    <button class="copy-btn" data-target="karol-6">Copy</button>
-    <pre id="karol-6">
-for i in range(10):
-    print("Buh!")
-    </pre>
-  </div>
-
-
-   <div class="snippet">
-    <div class="snippet-title">7. b) Aufrufer </div>
-    <button class="copy-btn" data-target="karol-7">Copy</button>
-    <pre id="karol-7">
-print("Wie viele Personen?")
-z = int(input())
-for i in range(z):
-    print("Nächste Person bitte!")
-    </pre>
-  </div>
-
-
-   <div class="snippet">
-    <div class="snippet-title">8. c) Beatbox</div>
-    <button class="copy-btn" data-target="karol-8">Copy</button>
-    <pre id="karol-8">
-print("Welcher Beat?")
-Beat = input()
-print("Wie oft?")
-zahl = int(input())
-for i in range(zahl):
-    print(Beat)
-    </pre>
-  </div>
-
-
-   <div class="snippet">
-    <div class="snippet-title">9. d) Countdown </div>
-    <button class="copy-btn" data-target="karol-9">Copy</button>
-    <pre id="karol-9">
-z = int(input())
-for i in range(z):
-    print(z - i)
-print("Fertig!")
-    </pre>
-  </div>
+  </style>
+</head>
 
 
 
-   <div class="snippet">
-    <div class="snippet-title">10. a) Dart 1 </div>
-    <button class="copy-btn" data-target="karol-10">Copy</button>
-    <pre id="karol-10">
-punktzahl = 501
-print("Neue Runde")
-wurf = int(input())
-punktzahl = punktzahl - wurf
-print(punktzahl)
-    </pre>
-  </div>
-
-
-
-   <div class="snippet">
-    <div class="snippet-title">11. b) Dart 2 </div>
-    <button class="copy-btn" data-target="karol-11">Copy</button>
-    <pre id="karol-11">
-punktzahl = 501
-print("Neue Runde")
-wurf = int(input())
-punktzahl = punktzahl - wurf
-print(punktzahl)
-wurf = int(input())
-punktzahl = punktzahl - wurf
-print(punktzahl)
-wurf = int(input())
-punktzahl = punktzahl - wurf
-print(punktzahl)
-    </pre>
-  </div>
-
-
-
-   <div class="snippet">
-    <div class="snippet-title">12. c) Dart 3 </div>
-    <button class="copy-btn" data-target="karol-12">Copy</button>
-    <pre id="karol-12">
-print("Zahl:")
-zahl = int(input())
-print("Faktor:")
-wurf = int(input())
-zahl = zahl * wurf
-print(zahl)
-    </pre>
-  </div>
-
-
-   <div class="snippet">
-    <div class="snippet-title">13. d) Summe </div>
-    <button class="copy-btn" data-target="karol-13">Copy</button>
-    <pre id="karol-13">
-print("Anzahl:")
-Anzahl = int(input())
-print("Zahlen:")
-Zahlen = 0
-for i in range(Anzahl):
-    Zahlen = Zahlen + int(input())
-print(Zahlen)
-    </pre>
-  </div>
-
-
-   <div class="snippet">
-    <div class="snippet-title">14. a) Geschichte </div>
-    <button class="copy-btn" data-target="karol-14">Copy</button>
-    <pre id="karol-14">
+<div class="snippet">
+  <div class="snippet-title">14. a) Geschichte</div>
+  <button class="copy-btn" data-target="karol-14">Copy</button>
+  <pre id="karol-14">
 name = input()
 land = input()
 print(f"{name} lebte vor langer Zeit in {land}.")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-
-   <div class="snippet">
-    <div class="snippet-title">15. b) Einmaleins </div>
-    <button class="copy-btn" data-target="karol-15">Copy</button>
-    <pre id="karol-15">
+<div class="snippet">
+  <div class="snippet-title">15. b) Einmaleins</div>
+  <button class="copy-btn" data-target="karol-15">Copy</button>
+  <pre id="karol-15">
 bauch = int(input())
 zahl = int(input())
 erg = bauch * zahl
 print(f"{bauch} mal {zahl} ist {erg}")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-
-   <div class="snippet">
-    <div class="snippet-title">16. c) Bierflaschen 1 </div>
-    <button class="copy-btn" data-target="karol-16">Copy</button>
-    <pre id="karol-16">
+<div class="snippet">
+  <div class="snippet-title">16. c) Bierflaschen 1</div>
+  <button class="copy-btn" data-target="karol-16">Copy</button>
+  <pre id="karol-16">
 print("Wie viele Flaschen?")
 zahl = int(input())
 print(f"{zahl} Flaschen Bier an der Wand,")
@@ -371,26 +267,25 @@ print(f"{zahl} Flaschen Bier.")
 print("Nimm eine runter, reich sie herum,")
 zahl = zahl - 1
 print(f"{zahl} Flaschen Bier an der Wand.")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-     <div class="snippet">
-    <div class="snippet-title">17. d) Bierflaschen 2 </div>
-    <button class="copy-btn" data-target="karol-17">Copy</button>
-    <pre id="karol-17">
+<div class="snippet">
+  <div class="snippet-title">17. d) Bierflaschen 2</div>
+  <button class="copy-btn" data-target="karol-17">Copy</button>
+  <pre id="karol-17">
 for i in range(7, 0, -1):
     print(f"{i} Flasche(n) Bier an der Wand,")
     print(f"{i} Flasche(n) Bier.")
     print("Nimm eine runter, reich sie herum,")
     print(f"{i - 1} Flasche(n) Bier an der Wand.")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">18. a) Passwort </div>
-    <button class="copy-btn" data-target="karol-18">Copy</button>
-    <pre id="karol-18">
+<div class="snippet">
+  <div class="snippet-title">18. a) Passwort</div>
+  <button class="copy-btn" data-target="karol-18">Copy</button>
+  <pre id="karol-18">
 print("Passwort?")
 A = input()
 
@@ -398,28 +293,26 @@ if A == "trowssaP":
     print("Zugriff gewährt")
 else:
     print("falsch")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">19. b) Kalte Schulter</div>
-    <button class="copy-btn" data-target="karol-19">Copy</button>
-    <pre id="karol-19">
+<div class="snippet">
+  <div class="snippet-title">19. b) Kalte Schulter</div>
+  <button class="copy-btn" data-target="karol-19">Copy</button>
+  <pre id="karol-19">
 A = input("Wer ist da?")
 
 if A == "Joel":
     print("Verrate mir endlich deinen Plan für meinen Geburtstag.")
 if A == "Maria":
     print("Ich möchte endlich mit auf Patrouille.")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">20. c) Zahlenraten 1 </div>
-    <button class="copy-btn" data-target="karol-20">Copy</button>
-    <pre id="karol-20">
+<div class="snippet">
+  <div class="snippet-title">20. c) Zahlenraten 1</div>
+  <button class="copy-btn" data-target="karol-20">Copy</button>
+  <pre id="karol-20">
 B = 7
 print("Rate meine Zahl")
 A = int(input())
@@ -427,14 +320,13 @@ if A < B:
     print("zu niedrig")
 if A > B:
     print("zu hoch")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">21. d) Zahlenraten 2</div>
-    <button class="copy-btn" data-target="karol-21">Copy</button>
-    <pre id="karol-21">
+<div class="snippet">
+  <div class="snippet-title">21. d) Zahlenraten 2</div>
+  <button class="copy-btn" data-target="karol-21">Copy</button>
+  <pre id="karol-21">
 print("Rate meine Zahl")
 A = 7
 B = int(input())
@@ -444,13 +336,13 @@ elif B < A:
     print("zu niedrig")
 else:
     print("WOW! MEGA!")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-   <div class="snippet">
-    <div class="snippet-title">22.e) Infizierte</div>
-    <button class="copy-btn" data-target="karol-22">Copy</button>
-    <pre id="karol-22">
+<div class="snippet">
+  <div class="snippet-title">22. e) Infizierte</div>
+  <button class="copy-btn" data-target="karol-22">Copy</button>
+  <pre id="karol-22">
 print("Wie viele Monate infiziert?")
 A = int(input())
 
@@ -462,15 +354,13 @@ elif A > 2:
     print("Das ist ein Stalker.")
 else:
     print("Das ist ein Runner.")
+  </pre>
+</div>
 
-    </pre>
-  </div>
-
-
-     <div class="snippet">
-    <div class="snippet-title">23. a) Regenbogen 1 </div>
-    <button class="copy-btn" data-target="karol-23">Copy</button>
-    <pre id="karol-23">
+<div class="snippet">
+  <div class="snippet-title">23. a) Regenbogen 1</div>
+  <button class="copy-btn" data-target="karol-23">Copy</button>
+  <pre id="karol-23">
 print("Rate meine Lieblingsfarbe!")
 
 while True:
@@ -478,14 +368,13 @@ while True:
     if farbe == "gelb":
         print("Richtig!")
         break
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">24.b) Regenbogen 2</div>
-    <button class="copy-btn" data-target="karol-24">Copy</button>
-    <pre id="karol-24">
+<div class="snippet">
+  <div class="snippet-title">24. b) Regenbogen 2</div>
+  <button class="copy-btn" data-target="karol-24">Copy</button>
+  <pre id="karol-24">
 print("Rate meine Lieblingsfarbe!")
 
 while True:
@@ -495,14 +384,13 @@ while True:
         break
     else:
         print("Nein")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">25. c) Spaßvogel </div>
-    <button class="copy-btn" data-target="karol-25">Copy</button>
-    <pre id="karol-25">
+<div class="snippet">
+  <div class="snippet-title">25. c) Spaßvogel</div>
+  <button class="copy-btn" data-target="karol-25">Copy</button>
+  <pre id="karol-25">
 print("A, B, C für Witze, x zum Beenden")
 
 while True:
@@ -517,15 +405,13 @@ while True:
     elif eingabe == "x":
         print("Tschüss")
         break
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">26. d) Dart (reloaded) </div>
-    <button class="copy-btn" data-target="karol-26">Copy</button>
-    <pre id="karol-26">
-
+<div class="snippet">
+  <div class="snippet-title">26. d) Dart (reloaded)</div>
+  <button class="copy-btn" data-target="karol-26">Copy</button>
+  <pre id="karol-26">
 print("Spielstart bei 201 Punkten")
 punkte = 201
 
@@ -543,14 +429,13 @@ while True:
         break
     else:
         print("Noch", punkte)
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">27. a) Meine Sprache 1 </div>
-    <button class="copy-btn" data-target="karol-27">Copy</button>
-    <pre id="karol-27">
+<div class="snippet">
+  <div class="snippet-title">27. a) Meine Sprache 1</div>
+  <button class="copy-btn" data-target="karol-27">Copy</button>
+  <pre id="karol-27">
 def begruessung(name):
     print(f"Hallo{name}")
 
@@ -564,14 +449,13 @@ def begruessung(name):
     print(f"Wirklich {name}")
 
 begruessung("schön")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">28. b) Meine Sprache 2 </div>
-    <button class="copy-btn" data-target="karol-28">Copy</button>
-    <pre id="karol-28">
+<div class="snippet">
+  <div class="snippet-title">28. b) Meine Sprache 2</div>
+  <button class="copy-btn" data-target="karol-28">Copy</button>
+  <pre id="karol-28">
 def begruessung(name):
     print(f"Lalal{name}")
 
@@ -585,28 +469,26 @@ def begruessung(name):
     print(f"Ich mag die Sonne, aber Regen ist auch {name}")
 
 begruessung("toll.")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-     <div class="snippet">
-    <div class="snippet-title">29. c) Schreiender Papagei </div>
-    <button class="copy-btn" data-target="karol-29">Copy</button>
-    <pre id="karol-29">
+<div class="snippet">
+  <div class="snippet-title">29. c) Schreiender Papagei</div>
+  <button class="copy-btn" data-target="karol-29">Copy</button>
+  <pre id="karol-29">
 def schreien(text):
     upper = text.upper()
     print(f"GR {upper} GR GR")
 
 eingabe = input("Sprich mit dem schreienden Papagei")
 schreien(eingabe)
-    </pre>
-  </div>
+  </pre>
+</div>
 
-  
-     <div class="snippet">
-    <div class="snippet-title">30. d) Geometrie </div>
-    <button class="copy-btn" data-target="karol-30">Copy</button>
-    <pre id="karol-30">
+<div class="snippet">
+  <div class="snippet-title">30. d) Geometrie</div>
+  <button class="copy-btn" data-target="karol-30">Copy</button>
+  <pre id="karol-30">
 def umfang(a, b):
     return 2 * (a + b)
 
@@ -618,15 +500,13 @@ b = int(input("Seite b:"))
 U = umfang(a, b)
 A = fläche(a, b)
 print(f"Das Rechteck mit a={a} und b={b} hat Umfang {U} und Fläche {A}.")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-  
-     <div class="snippet">
-    <div class="snippet-title">31. a) Patroullie 1 </div>
-    <button class="copy-btn" data-target="karol-31">Copy</button>
-    <pre id="karol-31">
+<div class="snippet">
+  <div class="snippet-title">31. a) Patroullie 1</div>
+  <button class="copy-btn" data-target="karol-31">Copy</button>
+  <pre id="karol-31">
 sicht = int(input("Sicht (m):"))
 wind = int(input("Wind (km/h):"))
 
@@ -634,16 +514,13 @@ if sicht < 100 or wind > 35:
     print("Wetterwarnung! Alle Teams zurück!")
 else:
     print("Alles gut")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-
-  
-     <div class="snippet">
-    <div class="snippet-title">32. b) Patroullie 2 </div>
-    <button class="copy-btn" data-target="karol-32">Copy</button>
-    <pre id="karol-32">
+<div class="snippet">
+  <div class="snippet-title">32. b) Patroullie 2</div>
+  <button class="copy-btn" data-target="karol-32">Copy</button>
+  <pre id="karol-32">
 sicht = int(input("Sicht (m):"))
 wind = int(input("Wind (km/h):"))
 
@@ -653,16 +530,13 @@ elif sicht < 500 and wind > 25:
     print("Gefahr! Heute nur kurze Route!")
 else:
     print("Alles gut")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-
-  
-     <div class="snippet">
-    <div class="snippet-title">33. c) Patroullie 3 </div>
-    <button class="copy-btn" data-target="karol-34">Copy</button>
-    <pre id="karol-33">
+<div class="snippet">
+  <div class="snippet-title">33. c) Patroullie 3</div>
+  <button class="copy-btn" data-target="karol-33">Copy</button>
+  <pre id="karol-33">
 sicht = int(input("Sicht (m):"))
 wind = int(input("Wind (km/h):"))
 temperatur = int(input("Temperatur (°C):"))
@@ -677,17 +551,13 @@ elif temperatur < -10 and wind > 20:
     print("Gefahr! Heute nur kurze Route!")
 else:
     print("Alles gut")
-    </pre>
-  </div>
+  </pre>
+</div>
 
-
-
-
-  
-     <div class="snippet">
-    <div class="snippet-title">34.d) Begegnung </div>
-    <button class="copy-btn" data-target="karol-34">Copy</button>
-    <pre id="karol-34">
+<div class="snippet">
+  <div class="snippet-title">34. d) Begegnung</div>
+  <button class="copy-btn" data-target="karol-34">Copy</button>
+  <pre id="karol-34">
 anzahl = int(input("Anzahl Infizierte:"))
 entfernung = int(input("Entfernung (m):"))
 
@@ -695,52 +565,9 @@ if anzahl > 5 or entfernung < 10:
     print("Rennen!")
 else:
     print("Kämpfen!")
-    </pre>
-  </div>
-
-    </div>
+  </pre>
 </div>
 
-<script>
-function toggleCategory(id) {
-  const content = document.getElementById(id);
-  const title = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    title.innerHTML = "▼ " + title.innerHTML.substring(2);
-  } else {
-    content.style.display = "none";
-    title.innerHTML = "▶ " + title.innerHTML.substring(2);
-  }
-}
-</script>
-
-
-
-
-
-  <script>
-    document.querySelectorAll('.copy-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const targetId = btn.getAttribute('data-target');
-        const codeElement = document.getElementById(targetId);
-        const text = codeElement.innerText;
-
-        navigator.clipboard.writeText(text).then(() => {
-          const original = btn.innerText;
-          btn.innerText = "Copied!";
-          btn.classList.add("copied");
-          setTimeout(() => {
-            btn.innerText = original;
-            btn.classList.remove("copied");
-          }, 1200);
-        });
-      });
-    });
-  </script>
-</body>
-</html>
 
   
 message.txt
