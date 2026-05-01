@@ -5,7 +5,13 @@
 <head> 
   <meta charset="UTF-8">
   <title>Watercode</title>
-  <style> .copy-btn {
+  <style> 
+	  
+	  
+	  
+<style>
+
+.copy-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -19,14 +25,13 @@
   transition: 0.2s;
 }
 
-
-	  
 .snippet {
   position: relative;
 }
 
+/* Discord direkt unter der Liste */
 .discord-inline {
-    margin-top: 2px;      /* extrem nah dran */
+    margin-top: 2px;
     font-size: 0.9rem;
     opacity: 0.9;
 }
@@ -35,99 +40,97 @@
     color: #ff4d4d;
 }
 
+/* Hintergrund SCHWARZ */
+body {
+  font-family: system-ui, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
 
-    body {
-      font-family: system-ui, sans-serif;
-      background: #63D1DB;
-      color: #5C6C6E;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #63D1DB;
-      font-size: 32px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
+h1 {
+  text-align: center;
+  color: #63D1DB;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
 
-	  .cool-box {
-    padding: 20px;
-    background: rgba(255, 0, 0, 0.08);
-    border-radius: 14px;
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 0, 0, 0.25);
+/* Cool-Box mit neuem Verlauf */
+.cool-box {
+  padding: 20px;
+  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.25);
 }
 
 .cool-list li {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
 }
 
-    
-    .snippet {
-      background: radial-gradient(circle at top, rgba(53,201,255,0.25), rgba(9,13,30,0.95));
-      border-radius: 18px;
-      padding: 1.4rem 1.3rem;
-      border: 1px solid rgba(255,255,255,0.06);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
-      position: relative;
-      overflow: hidden;
-    }
+/* Snippet mit neuem Verlauf */
+.snippet {
+  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+  border-radius: 18px;
+  padding: 1.4rem 1.3rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+  position: relative;
+  overflow: hidden;
+}
 
-    .snippet-title {
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: #60a5fa;
-    }
+.snippet-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #60a5fa;
+}
 
-    .hero-right {
-      background: radial-gradient(circle at top, rgba(53,201,255,0.25), rgba(9,13,30,0.95));
-      border-radius: 18px;
-      padding: 1.4rem 1.3rem;
-      border: 1px solid rgba(255,255,255,0.06);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
-      position: relative;
-      overflow: hidden;
-    }
-
+/* Hero-Right mit neuem Verlauf */
 .hero-right {
-    width: 40%;        /* rechte Hälfte der Seite */
-    margin-left: auto; /* schiebt den Block nach rechts */
-    margin-right: 0;   /* kein zusätzlicher Abstand */
+  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+  border-radius: 18px;
+  padding: 1.4rem 1.3rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+  width: 40%;
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  overflow: hidden;
 }
 
+pre {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+  white-space: pre;
+  color: #e5e7eb;
+}
 
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  transition: 0.15s;
+}
 
-	  
-    pre {
-      margin: 0;
-      font-family: "Fira Code", monospace;
-      font-size: 13px;
-      white-space: pre;
-      color: #e5e7eb;
-    }
+.copy-btn:active {
+  transform: scale(0.95);
+}
 
-    .copy-btn {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      padding: 4px 10px;
-      font-size: 12px;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      background: #3b82f6;
-      color: white;
-      transition: 0.15s;
-    }
+</style>
 
-    
-
-    .copy-btn:active {
-      transform: scale(0.95);
-    }
 
   </style>
 </head>
