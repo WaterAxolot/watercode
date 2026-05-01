@@ -56,6 +56,15 @@ h1 {
   margin-bottom: 20px;
 }
 
+.miku-top {
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 240px;
+  pointer-events: none;
+}
+
 .snippet-title {
   font-size: 14px;
   font-weight: 600;
@@ -141,6 +150,9 @@ pre {
 
   <!-- Hero Right -->
   <div class="hero-right">
+
+    <img src="mikumini.png" class="miku-top">
+
     <ol>
       <li>Robot Karol – Python-Lernpfad</li>
       <li>........................................................</li>
@@ -156,7 +168,8 @@ pre {
     
     
     
-    #1B51B3 Discort: https://discord.gg/HVxBbtVsGJ /
+  
+  <span class="pill-role pill-role-strong"> <a href="https://discord.gg/HVxBbtVsGJ" target="_blank" rel="noopener">Discord</a> /</span>
 
     <button class="copy-btn" data-target="code-2" onclick="copyCode(this)">Copy</button>
     <pre id="code-2"><!DOCTYPE html></pre>
