@@ -68,8 +68,15 @@
       position: relative;
       overflow: hidden;
     }
-	  
 
+	.hero-right {
+    margin-left: auto;      /* schiebt den Block komplett nach rechts */
+    margin-right: 40px;     /* Abstand vom rechten Rand */
+    width: fit-content;     /* Größe bleibt automatisch */
+}
+
+
+	  
     pre {
       margin: 0;
       font-family: "Fira Code", monospace;
@@ -104,34 +111,28 @@
       background: #16a34a !important;
     }
   </style>
-	.category {
-    margin-left: auto;   /* schiebt den ganzen Kasten nach rechts */
-    margin-right: 40px;  /* Abstand vom rechten Rand */
-    width: fit-content;  /* Größe bleibt automatisch */
-}
-
 </head>
 <body>
   <h1>WATERCODE</h1>
 
 
 
-  <!-- Beispiel Snippet 2 -->
+ <!-- Beispiel Snippet 2 -->
 <div class="hero-right">
-    <div class="hero-right">
-      <ol>
-  <li>Robot Karol – Python-Lernpfad</li>
-  <li>........................................................</li>
-  <li>........................................................</li>
-  <li>........................................................</li>
-  <li>........................................................</li>
-  <li>........................................................</li>
-  <li>........................................................</li>
-  <li>........................................................</li>
-  <li>........................................................</li>
-</ol>
-</div>
+    <ol>
+        <li>Robot Karol – Python-Lernpfad</li>
+        <li>........................................................</li>
+        <li>........................................................</li>
+        <li>........................................................</li>
+        <li>........................................................</li>
+        <li>........................................................</li>
+        <li>........................................................</li>
+        <li>........................................................</li>
+        <li>........................................................</li>
+    </ol>
+
     <button class="copy-btn" data-target="code-2">Copy</button>
+
     <pre id="code-2">
 <!DOCTYPE html>
 <html>
@@ -144,7 +145,8 @@
   </body>
 </html>
     </pre>
-  </div>
+</div>
+
 
 
 
