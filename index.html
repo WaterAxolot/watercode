@@ -81,6 +81,22 @@
       overflow: hidden;
     }
 
+	  .discord-inline {
+    margin-top: 8px;              /* direkt drunter, nicht tief */
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.discord-inline a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.discord-inline a:hover {
+    text-decoration: underline;
+}
+
+
     .snippet-title {
       font-size: 14px;
       font-weight: 600;
@@ -176,12 +192,11 @@
 </html>
     </pre>
 
-    <!-- Neue Discord-Liste -->
-    <div class="discord-box">
-        <p><strong>Discords:</strong></p>
-        <p>• <a href="#">WaterAxolotl#0001</a></p>
-        <p>• <a href="#">DevMaster#1234</a></p>
-        <p>• <a href="#">CodeWizard#9876</a></p>
+    <!-- Discord direkt darunter, nebeneinander -->
+    <div class="discord-inline">
+        <a href="#">WaterAxolotl#0001</a> /
+        <a href="#">DevMaster#1234</a> /
+        <a href="#">CodeWizard#9876</a>
     </div>
 </div>
 
