@@ -11,22 +11,23 @@
 	  
 <style>
 
+/* Copy Button */
 .copy-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #00aaff;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  cursor: pointer;
-  color: #fff;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
   font-size: 12px;
-  transition: 0.2s;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  transition: 0.15s;
 }
 
-.snippet {
-  position: relative;
+.copy-btn:active {
+  transform: scale(0.95);
 }
 
 /* Discord direkt unter der Liste */
@@ -49,6 +50,7 @@ body {
   padding: 20px;
 }
 
+/* Titel */
 h1 {
   text-align: center;
   color: #63D1DB;
@@ -57,10 +59,10 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Cool-Box mit neuem Verlauf */
+/* Cool-Box */
 .cool-box {
   padding: 20px;
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+  background: linear-gradient(135deg, #1FBED1, #555A5E);
   border-radius: 14px;
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255,255,255,0.25);
@@ -71,9 +73,9 @@ h1 {
   margin-bottom: 6px;
 }
 
-/* Snippet mit neuem Verlauf */
+/* Snippet */
 .snippet {
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+  background: linear-gradient(135deg, #1FBED1, #555A5E);
   border-radius: 18px;
   padding: 1.4rem 1.3rem;
   border: 1px solid rgba(255,255,255,0.06);
@@ -89,9 +91,9 @@ h1 {
   color: #60a5fa;
 }
 
-/* Hero-Right mit neuem Verlauf */
+/* Hero-Right */
 .hero-right {
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+  background: linear-gradient(135deg, #1FBED1, #555A5E);
   border-radius: 18px;
   padding: 1.4rem 1.3rem;
   border: 1px solid rgba(255,255,255,0.06);
@@ -103,6 +105,7 @@ h1 {
   overflow: hidden;
 }
 
+/* Codeblock */
 pre {
   margin: 0;
   font-family: "Fira Code", monospace;
@@ -111,23 +114,8 @@ pre {
   color: #e5e7eb;
 }
 
-.copy-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 4px 10px;
-  font-size: 12px;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  background: #3b82f6;
-  color: white;
-  transition: 0.15s;
-}
+</style>
 
-.copy-btn:active {
-  transform: scale(0.95);
-}
 
 </style>
 
