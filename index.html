@@ -3,160 +3,117 @@
 <!DOCTYPE html>
 <html lang="de">
 <head> 
+  <meta charset="UTF-8">
+  <title>Watercode</title>
+
   <style>
+
+    /* Hintergrundbild */
     body {
+      font-family: system-ui, sans-serif;
       background-image: url('background.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
     }
-  </style>
-</head>
 
-  <meta charset="UTF-8">
-  <title>Watercode</title>
-  <style> 
-	  
-	  
-	  
-<style>
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #00aaff;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 12px;
+      transition: 0.2s;
+    }
 
-.copy-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #00aaff;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 12px;
-  transition: 0.2s;
-}
+    .snippet {
+      position: relative;
+    }
 
+    .discord-inline {
+      margin-top: 2px;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
 
-body {
-  background-image: url('background.png');
-  background-size: cover;        /* passt das Bild an die Seite an */
-  background-position: center;   /* zentriert das Bild */
-  background-repeat: no-repeat;  /* kein mehrfaches Kacheln */
-  background-attachment: fixed;  /* bleibt beim Scrollen stehen */
-}
+    .discord-inline strong {
+      color: #ff4d4d;
+    }
 
+    h1 {
+      text-align: center;
+      color: #000000;
+      font-size: 32px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
 
-.snippet {
-  position: relative;
-}
+    .cool-box {
+      padding: 20px;
+      background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+      border-radius: 14px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
 
-/* Discord direkt unter der Liste */
-.discord-inline {
-    margin-top: 2px;
-    font-size: 0.9rem;
-    opacity: 0.9;
-}
+    .cool-list li {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
 
-.discord-inline strong {
-    color: #ff4d4d;
-}
+    .snippet {
+      background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+      position: relative;
+      overflow: hidden;
+    }
 
-/* Hintergrund SCHWARZ */
-body {
-  font-family: system-ui, sans-serif;
-  background: #000000;
-  color: #ffffff;
-  margin: 0;
-  padding: 20px;
-}
+    .snippet-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #000000;
+    }
 
-h1 {
-  text-align: center;
-  color: #000000;
-  font-size: 32px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
+    .hero-right {
+      background: linear-gradient(135deg, #1FBED1, #5C6C6E);
+      border-radius: 18px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.55);
+      width: 40%;
+      margin-left: auto;
+      margin-right: 0;
+      position: relative;
+      overflow: hidden;
+    }
 
-/* Cool-Box mit neuem Verlauf */
-.cool-box {
-  padding: 20px;
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
-  border-radius: 14px;
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.25);
-}
+    pre {
+      margin: 0;
+      font-family: "Fira Code", monospace;
+      font-size: 13px;
+      white-space: pre;
+      color: #e5e7eb;
+    }
 
-.cool-list li {
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-}
-
-/* Snippet mit neuem Verlauf */
-.snippet {
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
-  border-radius: 18px;
-  padding: 1.4rem 1.3rem;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.55);
-  position: relative;
-  overflow: hidden;
-}
-
-.snippet-title {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #000000;
-}
-
-/* Hero-Right mit neuem Verlauf */
-.hero-right {
-  background: linear-gradient(135deg, #1FBED1, #5C6C6E);
-  border-radius: 18px;
-  padding: 1.4rem 1.3rem;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.55);
-  width: 40%;
-  margin-left: auto;
-  margin-right: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-pre {
-  margin: 0;
-  font-family: "Fira Code", monospace;
-  font-size: 13px;
-  white-space: pre;
-  color: #e5e7eb;
-}
-
-.copy-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 4px 10px;
-  font-size: 12px;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  background: #3b82f6;
-  color: white;
-  transition: 0.15s;
-}
-
-.copy-btn:active {
-  transform: scale(0.95);
-}
-
-</style>
-
+    .copy-btn:active {
+      transform: scale(0.95);
+    }
 
   </style>
 </head>
-<body>
-  <h1>WATERCODE</h1>
 
 
 
