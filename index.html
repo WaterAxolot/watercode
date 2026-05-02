@@ -37,6 +37,34 @@
     z-index: 0;
 }
 
+
+.search-box {
+  position: relative;
+  width: 260px;
+}
+
+.suggestions {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background: #0d1b2a;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,255,255,0.3);
+  display: none;
+  z-index: 10;
+}
+
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.suggestions div:hover {
+  background: rgba(0,255,255,0.2);
+}
+
+
 .BG-Glow {
     position: fixed;
     width: 600px;
@@ -243,6 +271,47 @@ function searchSite() {
 </script>
 
 
+<script>
+const pages = {
+    "python": "#python",
+    "karol": "#karol",
+    "robot karol": "#karol",
+    "tipps": "#tipps",
+    "fonts": "#fonts",
+    "audiowide": "#fonts",
+    "html": "#html",
+    "css": "#css",
+    "javascript": "#javascript"
+};
+
+function showSuggestions() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const suggestionBox = document.getElementById("suggestions");
+
+    suggestionBox.innerHTML = "";
+    suggestionBox.style.display = "none";
+
+    if (input.length === 0) return;
+
+    const matches = Object.keys(pages).filter(key => key.includes(input));
+
+    if (matches.length === 0) return;
+
+    suggestionBox.style.display = "block";
+
+    matches.forEach(match => {
+        const div = document.createElement("div");
+        div.textContent = match;
+        div.onclick = () => {
+            window.location.href = pages[match];
+        };
+        suggestionBox.appendChild(div);
+    });
+}
+</script>
+
+
+
 </head>
 
 <body>        
@@ -277,11 +346,10 @@ function searchSite() {
 
 
 
-  <input type="text" id="searchInput" placeholder="Suche..." 
-       style="padding: 10px; width: 250px; border-radius: 8px; border: none;">
-<button onclick="searchSite()" 
-        style="padding: 10px 15px; border-radius: 8px; border: none; background:#ffffff; color:black;">
-  Suchen
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Suche..." onkeyup="showSuggestions()">
+  <div id="suggestions" class="suggestions"></div>
+</div>
 </button>
 
 
