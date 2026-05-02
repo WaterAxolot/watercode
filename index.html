@@ -216,6 +216,33 @@ body {
     }
   </script>
 
+  <script>
+function searchSite() {
+    const query = document.getElementById("searchInput").value.toLowerCase();
+
+    // Liste deiner Inhalte
+    const pages = {
+        "python": "#python",
+        "java": "#java",
+        "robot karol": "#karol",
+        "tipps": "#tipps",
+        "fonts": "#fonts",
+        "audiowide": "#fonts",
+        "html": "#html",
+        "css": "#css",
+        "javascript": "#javascript"
+    };
+
+    // Wenn Suchbegriff existiert → weiterleiten
+    if (pages[query]) {
+        window.location.href = pages[query];
+    } else {
+        alert("Nichts gefunden.");
+    }
+}
+</script>
+
+
 </head>
 
 <body>        
@@ -253,7 +280,7 @@ body {
   <input type="text" id="searchInput" placeholder="Suche..." 
        style="padding: 10px; width: 250px; border-radius: 8px; border: none;">
 <button onclick="searchSite()" 
-        style="padding: 10px 15px; border-radius: 8px; border: none; background:#00aaff; color:white;">
+        style="padding: 10px 15px; border-radius: 8px; border: none; background:#B1DEDE; color:blue;">
   Suchen
 </button>
 
