@@ -132,8 +132,23 @@ body {
     transition: 0.2s;
   }
 
-  .copy-btn:hover {
-    background: #0088cc;
+ body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #647070; /* Grundfarbe für den Rest */
+
+  /* Feste, kugelförmige Fläche oben */
+  background-image: radial-gradient(
+    circle at top center,
+    #7BDBDB 0,
+    #7BDBDB 220px,
+    #647070 260px
+  );
+
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* bleibt „fest“ beim Scrollen */
+}
+
   }
 
   .copy-btn:active {
