@@ -26,25 +26,44 @@
 
   <style>
 
-  /* Hintergrund */
-body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: #647070;
-  background-image: radial-gradient(
-    circle at top center,
-    #7BDBDB 0%,
-    #ffffff 10%,
-    #6A8A8A 40%,
-    #647070 300%
-  );
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
-  animation: gradientShift 10s ease-in-out infinite alternate;
+/* ANIMIERTER HINTERGRUND */
+
+.BG-Grid {
+    Position: repariert;
+    Einbau: 0;
+    Hintergrundbild:
+        Lineargradient(RGBA(0,200,255,0.03) 1px, Transparent 1px),
+        Lineargradient(90Grad, RGBA(0,200,255,0.03) 1px, Transparent 1px);
+    Hintergrundgröße: 40px 40px;
+    Pointer-Events: keine;
+    z-Index: 0;
 }
 
-/* Animation für sanften Farbwechsel */
+.BG-Glow {
+    Position: repariert;
+    Breite: 600px; Höhe: 600px;
+    Hintergrund: Radialgradient(Kreis, RGBA(0,200,255,0.06) 0%, Transparent 70%);
+    Top: -100px; Links: -100px;
+    Pointer-Events: keine;
+    z-Index: 0;
+    Animation: Drift 20s Lock-in-out unendliche Alternative;
+}
+
+.BG-Glow2 {
+    Position: repariert;
+    Breite: 400px; Höhe: 400px;
+    Hintergrund: Radialgradient(Kreis, RGBA(14,240,160,0.05) 0%, Transparent 70%);
+    Unteres: 0; Rechts: 0;
+    Pointer-Events: keine;
+    z-Index: 0;
+    Animation: Drift 15s Lock-in-out unendliche Alternate-Reverse;
+}
+
+@keyframes Drift {
+    von { Transformieren: Übersetzen(0, 0); }
+    zu { Transformieren: Übersetzen(0px, 60px); }
+}
+
 
 
 
