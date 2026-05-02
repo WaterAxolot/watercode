@@ -27,7 +27,44 @@
   <style>
 
   /* Hintergrund */
-  
+  body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #647070;
+  background-image: radial-gradient(
+    circle at top center,
+    #7BDBDB 0,
+    #7BDBDB 300px,
+    #6A8A8A 1500px,
+    #647070 3000px
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  animation: gradientShift 10s ease-in-out infinite alternate;
+}
+
+/* Animation für sanften Farbwechsel */
+@keyframes gradientShift {
+  0% {
+    background-image: radial-gradient(
+      circle at top center,
+      #7BDBDB 0,
+      #7BDBDB 300px,
+      #6A8A8A 1500px,
+      #647070 3000px
+    );
+  }
+  100% {
+    background-image: radial-gradient(
+      circle at top center,
+      #7BDBDB 0,
+      #7BDBDB 300px,
+      #5A9A9A 1500px,
+      #647070 3000px
+    );
+  }
+}
 
 
 
