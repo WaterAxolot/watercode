@@ -7,6 +7,9 @@
 </head>
 
 <body>
+
+  <div class="BG-Image"></div>
+
   <div class="logo-wrap">
     <img src="watercode-logo-miku.png" alt="WATERCODE Logo" class="logo">
   </div>
@@ -121,15 +124,17 @@
   overflow: hidden;
 }
 
-
 body {
-    background-image: url("hintergrund.png");
-    background-size: contain;   /* GANZES Bild sichtbar */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-color: #7FB8B8;
+  margin: 0;
+  padding: 0;
+
+  background-image: url('hintergrund.png');
+  background-size: 100% 100%;   /* Bild immer komplett sichtbar */
+  background-repeat: no-repeat; /* kein Kacheln */
+  background-position: center;  /* zentriert */
+  background-attachment: scroll; /* bewegt sich mit */
 }
+
 
 
 
