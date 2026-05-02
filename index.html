@@ -23,13 +23,22 @@
 
   /* Hintergrund */
 body {
- background: linear-gradient(135deg, #4C919E, #69787A);
-  background-attachment: fixed;
-  background-size: cover;
   margin: 0;
-  padding: 20px;
-  font-family: system-ui, sans-serif;
-  color: #ffffff;
+  min-height: 100vh;
+  background-color: #647070; /* Grundfarbe für den Rest */
+
+  /* Kugelförmiger Verlauf oben mit sehr weitem Übergang */
+  background-image: radial-gradient(
+    circle at top center,
+    #7BDBDB 0,
+    #7BDBDB 300px,
+    #6A8A8A 1500px,
+    #647070 3000px
+  );
+
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* bleibt fest beim Scrollen */
+  background-position: top center; /* bleibt immer oben */
 }
 
 
