@@ -108,9 +108,19 @@
   color: white;
 }
 
-.suggestions div:hover {
-  background: rgba(0,255,255,0.2);
+.suggestions {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background: rgba(255,255,255,0.08); /* leicht transparent */
+  border-radius: 18px;
+  backdrop-filter: blur(10px); /* moderner Glass-Effekt */
+  border: 1px solid rgba(255,255,255,0.15);
+  display: none;
+  z-index: 10;
+  overflow: hidden;
 }
+
 
 
 body {
@@ -427,6 +437,55 @@ Thank you for your patience while the website is still under construction.
 
           
           
+
+<h2 id="python">Python Bereich</h2>
+  <h2 class="category-title" onclick="toggleCategory('2')">
+python Code <3
+</h2>
+
+
+
+
+  
+  </div> <!-- Ende category-content -->
+  </div> <!-- Ende category -->
+
+
+
+
+  <h2 class="category-title" onclick="toggleCategory('3')">
+--------------------------------
+</h2>
+  </div> <!-- Ende category-content -->
+  </div> <!-- Ende category -->
+
+
+
+
+  <h2 class="category-title" onclick="toggleCategory('4')">
+  --------------------------------
+</h2>
+  </div> <!-- Ende category-content -->
+  </div> <!-- Ende category -->
+
+
+
+
+
+  <h2 class="category-title" onclick="toggleCategory('5')">
+  --------------------------------
+</h2>
+  </div> <!-- Ende category-content -->
+  </div> <!-- Ende category -->
+
+
+
+<h2 class="category-title" onclick="toggleCategory('6')">
+  --------------------------------
+</h2>
+  </div> <!-- Ende category-content -->
+  </div> <!-- Ende category -->
+
           <!-- Kategorie: Robot Karol -->
  <h2 class="category-title" onclick="toggleCategory('karol')">
   Robot Karol – Python-Lernpfad
@@ -943,55 +1002,6 @@ else:
   
     </div> <!-- Ende category-content -->
   </div> <!-- Ende category -->
-
-<h2 id="python">Python Bereich</h2>
-  <h2 class="category-title" onclick="toggleCategory('2')">
-Code‑Einstieg<3
-</h2>
-
-
-
-
-  
-  </div> <!-- Ende category-content -->
-  </div> <!-- Ende category -->
-
-
-
-
-  <h2 class="category-title" onclick="toggleCategory('3')">
---------------------------------
-</h2>
-  </div> <!-- Ende category-content -->
-  </div> <!-- Ende category -->
-
-
-
-
-  <h2 class="category-title" onclick="toggleCategory('4')">
-  --------------------------------
-</h2>
-  </div> <!-- Ende category-content -->
-  </div> <!-- Ende category -->
-
-
-
-
-
-  <h2 class="category-title" onclick="toggleCategory('5')">
-  --------------------------------
-</h2>
-  </div> <!-- Ende category-content -->
-  </div> <!-- Ende category -->
-
-
-
-<h2 class="category-title" onclick="toggleCategory('6')">
-  --------------------------------
-</h2>
-  </div> <!-- Ende category-content -->
-  </div> <!-- Ende category -->
-
 
   
 </body>
