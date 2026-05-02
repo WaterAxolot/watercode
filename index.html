@@ -44,6 +44,20 @@
   width: 700px; /* länger */
 }
 
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url('hintergrund.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;        /* Variante 2: füllt den Bildschirm */
+  background-attachment: scroll; /* bewegt sich mit */
+}
+
+
+
 /* Suchfeld */
 #searchInput {
   width: 100%;
@@ -212,6 +226,8 @@ body {
     overflow: visible;
   }
 
+    
+
   /* Snippet Box */
   .snippet {
     position: relative;
@@ -286,26 +302,6 @@ body {
   }
 
   </style>
-
-  <script>
-    function toggleCategory(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === "none" ? "block" : "none";
-    }
-
-    function copyCode(btn) {
-      const code = document.getElementById(btn.dataset.target).innerText;
-      navigator.clipboard.writeText(code);
-
-      btn.textContent = "Kopiert!";
-      btn.style.background = "#16a34a";
-
-      setTimeout(() => {
-        btn.textContent = "Copy";
-        btn.style.background = "#00aaff";
-      }, 1200);
-    }
-  </script>
 
   <script>
 function searchSite() {
