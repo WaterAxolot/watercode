@@ -357,6 +357,8 @@ function showSuggestions() {
 </script>
 
 
+
+
 <script>
 function toggleCategory(id) {
   const box = document.getElementById(id);
@@ -365,6 +367,22 @@ function toggleCategory(id) {
   } else {
     box.style.display = "none";
   }
+
+
+  
+}
+<script>
+function toggleCategory(id) {
+  const box = document.getElementById(id);
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+
+
+</div>
+
 }
 </script>
 
@@ -433,9 +451,11 @@ Thank you for your patience while the website is still under construction.
           
 
 <h2 id="python"> </h2>
-  <h2 class="category-title" onclick="toggleCategory('2')">
+<h2 class="category-title" onclick="toggleCategory('2')">
 python Code <3
 </h2>
+
+<div class="category-content" id="category-2">
 
 
 <!-- Snippet 1 -->
