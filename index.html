@@ -39,8 +39,17 @@
 }
     
 body {
-  background-image: url('hintergrund.png');
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url("hintergrund.png"); /* Bildpfad */
+    background-repeat: repeat-y;           /* Wiederholt NUR nach unten */
+    background-size: auto;                 /* Originalgröße */
+    background-position: center top;       /* Oben zentriert */
+    background-color: #0a0a0a;             /* Fallback-Farbe */
 }
+
 
 
 
