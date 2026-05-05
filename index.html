@@ -18,7 +18,14 @@
     pointer-events: none;
     z-index: 0;
 }
+<div class="discord-box">
+    <strong>Discord</strong><br>
+    <a href="https://discord.gg/HVxBbtVsGJ" target="_blank" rel="noopener">
+        HVxBbtVsGJ – Join now
+    </a>
+</div>
 
+    
 body {
   background-color: #0D6A75;
   background-image: linear-gradient(#0C5963 1px, transparent 1px),
@@ -162,6 +169,37 @@ body {
 .copy-btn:active {
   transform: scale(0.95);
 }
+/* Der gesamte Block rechts + Kasten */
+.snippet-box {
+    width: 420px;
+    margin-left: auto;        /* schiebt alles nach rechts */
+    margin-right: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Discord-Kasten */
+.discord-box {
+    margin-top: 12px;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.discord-box a {
+    color: #9ccaff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.discord-box a:hover {
+    text-decoration: underline;
+}
 
 /* Codeblock */
 pre {
@@ -203,7 +241,8 @@ function toggleCategory(id) {
   
   <img src="watercode-logo-miku.png" class="miku-top">
 <!-- Beispiel Snippet 2 -->
-<div class="hero-right cool-box">
+<div class="hero-right cool-box snippet-box">
+
     <ol class="cool-list">
         <li>Robot Karol – Python-Lernpfad</li>
         <li>........................................................</li>
@@ -221,18 +260,25 @@ function toggleCategory(id) {
     <pre id="code-2">
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Meine Seite</title>
-  </head>
-  <body>
+</head>
+<body>
     <h1></h1>
-  </body>
+</body>
 </html>
     </pre>
-  <span class="pill-role pill-role-strong">
-    <a href="https://discord.gg/HVxBbtVsGJ" target="_blank" rel="noopener">Discord</a> /
-  </span>
+
+    <div class="discord-box">
+        <strong>Discord</strong><br>
+        <a href="https://discord.gg/HVxBbtVsGJ" target="_blank" rel="noopener">
+            Join the Server
+        </a>
+    </div>
+
+</div>
+
 
   <button class="copy-btn" data-target="code-2" onclick="copyCode(this)">Copy</button>
   <pre id="code-2"><!DOCTYPE html></pre>
