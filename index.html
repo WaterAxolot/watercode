@@ -139,7 +139,7 @@ body {
 }
 
 .right-box {
-    position: relative;
+    position: absolute;
   background: linear-gradient(135deg, #1FBED1, #000000);
   border-radius: 18px;
   padding: 1.4rem 1.3rem;
@@ -216,19 +216,13 @@ function toggleCategory(id) {
 
   <img src="watercode-logo-miku.png" class="miku-top">
 
-  <span class="pill-role pill-role-strong">
-    <a href="https://discord.gg/HVxBbtVsGJ" target="_blank" rel="noopener">Discord</a> /
-  </span>
 
-  <button class="copy-btn" data-target="code-2" onclick="copyCode(this)">Copy</button>
-  <pre id="code-2"><!DOCTYPE html></pre>
-</div>
-
-
-
+  
 <div class="right-box">
     Hallo
 </div>
+
+
   
 <div class="search-box">
   <input type="text" id="searchInput" placeholder="Suche..." onkeyup="showSuggestions()">
