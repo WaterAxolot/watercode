@@ -268,10 +268,15 @@ Thank you for your patience and understanding while development continues.
     <div class="snippet-title">2. Vorgeschichte</div>
     <button class="copy-btn" data-target="karol-2" onclick="copyCode(this)">Copy</button>
     <pre id="karol-2">
+# Dieses Programm gibt eine kleine Vorgeschichte aus.
+# Es nutzt nur print(), um mehrere Textzeilen nacheinander anzuzeigen.
+# Es gibt keine Eingaben und keine Variablen – reiner Story‑Text.
+
 print("Vorgeschichte: Eine Infektion breitet sich über die Welt aus und lässt Menschen zu Zombies mutieren.")
 print("Große Teile der Zivilisation gehen unter, die wenigen Menschen kämpfen hart um ihr Überleben.")
 print("Jackson ist eine kleine Oase in dieser chaotischen Welt, wo eine Gemeinschaft sich ein Zuhause gebaut hat.")
 print("Ellie und Joel (nicht verwandt) kehren nach ihrer großen Reise nach Jackson zurück. Joels Bruder Tommy wohnt hier mit seiner Frau Maria.")
+
     </pre>
   </div>
 
@@ -280,10 +285,17 @@ print("Ellie und Joel (nicht verwandt) kehren nach ihrer großen Reise nach Jack
     <div class="snippet-title">3. a) Flachwitz</div>
     <button class="copy-btn" data-target="karol-3" onclick="copyCode(this)">Copy</button>
     <pre id="karol-3">
+# Dieses Programm stellt einen Flachwitz.
+# Der Nutzer darf zwar etwas eingeben, aber die Eingabe wird ignoriert.
+# Die Pointe ist immer "Stock".
+
 print("Wie nennt man einen Bumerang, der nicht zurückkommt?")
-name = input()
-print("Stock")
-print("Haha")
+
+name = input()   # Nutzer gibt eine Antwort ein, wird aber nicht verwendet
+
+print("Stock")   # Pointe des Witzes
+print("Haha")    # Reaktion
+
     </pre>
   </div>
 
@@ -292,9 +304,14 @@ print("Haha")
     <div class="snippet-title">4. b) Papagei</div>
     <button class="copy-btn" data-target="karol-4" onclick="copyCode(this)">Copy</button>
     <pre id="karol-4">
+# Dieses Programm wiederholt einfach das Wort,
+# das der Nutzer eingibt – wie ein Papagei.
+
 print("Ich bin ein Papagei.")
-word = input()
-print(word)
+
+word = input()   # Nutzer gibt ein Wort ein
+
+print(word)      # Das Programm wiederholt es
     </pre>
   </div>
 
@@ -303,10 +320,13 @@ print(word)
     <div class="snippet-title">5. c) Echo</div>
     <button class="copy-btn" data-target="karol-5" onclick="copyCode(this)">Copy</button>
     <pre id="karol-5">
-wort = input()
+# Dieses Programm wiederholt das eingegebene Wort dreimal.
+
+wort = input()   # Nutzer gibt ein Wort ein
 print(wort)
 print(wort)
 print(wort)
+
     </pre>
   </div>
 
@@ -315,8 +335,12 @@ print(wort)
     <div class="snippet-title">6. a) Schleife</div>
     <button class="copy-btn" data-target="karol-6" onclick="copyCode(this)">Copy</button>
     <pre id="karol-6">
+# Dieses Programm gibt 10-mal "Buh!" aus.
+# range(10) bedeutet: 0 bis 9 → also 10 Wiederholungen.
+
 for i in range(10):
     print("Buh!")
+
     </pre>
   </div>
 
@@ -325,10 +349,14 @@ for i in range(10):
     <div class="snippet-title">7. b) Aufrufer</div>
     <button class="copy-btn" data-target="karol-7" onclick="copyCode(this)">Copy</button>
     <pre id="karol-7">
+# Das Programm fragt, wie viele Personen da sind.
+# Dann wird für jede Person "Nächste Person bitte!" ausgegeben.
+
 print("Wie viele Personen?")
-z = int(input())
-for i in range(z):
+z = int(input())     # Anzahl eingeben
+for i in range(z):   # Schleife läuft z-mal
     print("Nächste Person bitte!")
+
     </pre>
   </div>
 
@@ -337,12 +365,16 @@ for i in range(z):
     <div class="snippet-title">8. c) Beatbox</div>
     <button class="copy-btn" data-target="karol-8" onclick="copyCode(this)">Copy</button>
     <pre id="karol-8">
+# Das Programm fragt nach einem Beat und wie oft er wiederholt werden soll.
+
 print("Welcher Beat?")
-Beat = input()
+Beat = input()       # Beat eingeben
 print("Wie oft?")
-zahl = int(input())
-for i in range(zahl):
+zahl = int(input())  # Anzahl eingeben
+
+for i in range(zahl):   # Wiederholt den Beat
     print(Beat)
+
     </pre>
   </div>
 
@@ -351,10 +383,13 @@ for i in range(zahl):
     <div class="snippet-title">9. d) Countdown</div>
     <button class="copy-btn" data-target="karol-9" onclick="copyCode(this)">Copy</button>
     <pre id="karol-9">
-z = int(input())
-for i in range(z):
-    print(z - i)
+# Dieses Programm zählt von der eingegebenen Zahl rückwärts bis 1.
+
+z = int(input())        # Startzahl
+for i in range(z):      # Schleife läuft z-mal
+    print(z - i)        # Ausgabe: 0, 1, 2 ...
 print("Fertig!")
+
     </pre>
   </div>
 
@@ -363,11 +398,15 @@ print("Fertig!")
     <div class="snippet-title">10. a) Dart 1</div>
     <button class="copy-btn" data-target="karol-10" onclick="copyCode(this)">Copy</button>
     <pre id="karol-10">
+# Dart-Spiel: Start bei 501 Punkten.
+# Ein Wurf wird abgezogen.
+
 punktzahl = 501
 print("Neue Runde")
-wurf = int(input())
+wurf = int(input())     # Punkte des Wurfs
 punktzahl = punktzahl - wurf
 print(punktzahl)
+
     </pre>
   </div>
 
@@ -376,17 +415,23 @@ print(punktzahl)
     <div class="snippet-title">11. b) Dart 2</div>
     <button class="copy-btn" data-target="karol-11" onclick="copyCode(this)">Copy</button>
     <pre id="karol-11">
+# Gleicher Ablauf wie Snippet 10, aber mit drei Würfen hintereinander.
+
 punktzahl = 501
 print("Neue Runde")
+
 wurf = int(input())
-punktzahl = punktzahl - wurf
+punktzahl -= wurf
 print(punktzahl)
+
 wurf = int(input())
-punktzahl = punktzahl - wurf
+punktzahl -= wurf
 print(punktzahl)
+
 wurf = int(input())
-punktzahl = punktzahl - wurf
+punktzahl -= wurf
 print(punktzahl)
+
     </pre>
   </div>
 
@@ -395,12 +440,17 @@ print(punktzahl)
     <div class="snippet-title">12. c) Dart 3</div>
     <button class="copy-btn" data-target="karol-12" onclick="copyCode(this)">Copy</button>
     <pre id="karol-12">
+# Dieses Programm multipliziert zwei Zahlen.
+# Beispiel: Zahl 10, Faktor 3 → Ergebnis 30.
+
 print("Zahl:")
 zahl = int(input())
 print("Faktor:")
 wurf = int(input())
+
 zahl = zahl * wurf
 print(zahl)
+
     </pre>
   </div>
 
@@ -409,13 +459,20 @@ print(zahl)
     <div class="snippet-title">13. d) Summe</div>
     <button class="copy-btn" data-target="karol-13" onclick="copyCode(this)">Copy</button>
     <pre id="karol-13">
+# Das Programm summiert mehrere eingegebene Zahlen.
+# Der Nutzer gibt zuerst an, wie viele Zahlen folgen.
+
 print("Anzahl:")
 Anzahl = int(input())
+
 print("Zahlen:")
-Zahlen = 0
-for i in range(Anzahl):
+Zahlen = 0   # Startwert
+
+for i in range(Anzahl):      # Schleife läuft Anzahl-mal
     Zahlen = Zahlen + int(input())
-print(Zahlen)
+
+print(Zahlen)                # Gesamtsumme
+
     </pre>
   </div>
 
@@ -424,9 +481,13 @@ print(Zahlen)
     <div class="snippet-title">14. a) Geschichte</div>
     <button class="copy-btn" data-target="karol-14" onclick="copyCode(this)">Copy</button>
     <pre id="karol-14">
-name = input()
-land = input()
+# Das Programm baut aus zwei Eingaben einen Satz.
+
+name = input()   # Name eingeben
+land = input()   # Land eingeben
+
 print(f"{name} lebte vor langer Zeit in {land}.")
+
     </pre>
   </div>
 
@@ -435,10 +496,14 @@ print(f"{name} lebte vor langer Zeit in {land}.")
     <div class="snippet-title">15. b) Einmaleins</div>
     <button class="copy-btn" data-target="karol-15" onclick="copyCode(this)">Copy</button>
     <pre id="karol-15">
+# Einfaches Einmaleins: zwei Zahlen werden multipliziert.
+
 bauch = int(input())
 zahl = int(input())
 erg = bauch * zahl
+
 print(f"{bauch} mal {zahl} ist {erg}")
+
     </pre>
   </div>
 
@@ -447,13 +512,20 @@ print(f"{bauch} mal {zahl} ist {erg}")
     <div class="snippet-title">16. c) Bierflaschen 1</div>
     <button class="copy-btn" data-target="karol-16" onclick="copyCode(this)">Copy</button>
     <pre id="karol-16">
+# Ein Vers des Liedes "99 Bottles of Beer".
+# Die Zahl wird einmal reduziert.
+
 print("Wie viele Flaschen?")
 zahl = int(input())
+
 print(f"{zahl} Flaschen Bier an der Wand,")
 print(f"{zahl} Flaschen Bier.")
 print("Nimm eine runter, reich sie herum,")
-zahl = zahl - 1
+
+zahl = zahl - 1   # Eine Flasche weniger
+
 print(f"{zahl} Flaschen Bier an der Wand.")
+
     </pre>
   </div>
 
@@ -462,11 +534,15 @@ print(f"{zahl} Flaschen Bier an der Wand.")
     <div class="snippet-title">17. d) Bierflaschen 2</div>
     <button class="copy-btn" data-target="karol-17" onclick="copyCode(this)">Copy</button>
     <pre id="karol-17">
-for i in range(7, 0, -1):
+# Das gleiche Prinzip wie Snippet 16,
+# aber automatisch von 7 bis 1 herunter.
+
+for i in range(7, 0, -1):   # Start 7, Ende 1, Schritt -1
     print(f"{i} Flasche(n) Bier an der Wand,")
     print(f"{i} Flasche(n) Bier.")
     print("Nimm eine runter, reich sie herum,")
     print(f"{i - 1} Flasche(n) Bier an der Wand.")
+
     </pre>
   </div>
 
@@ -475,6 +551,9 @@ for i in range(7, 0, -1):
     <div class="snippet-title">18. a) Passwort</div>
     <button class="copy-btn" data-target="karol-18" onclick="copyCode(this)">Copy</button>
     <pre id="karol-18">
+# Einfacher Passwort-Check.
+# Nur das Passwort "trowssaP" wird akzeptiert.
+
 print("Passwort?")
 A = input()
 
@@ -482,6 +561,7 @@ if A == "trowssaP":
     print("Zugriff gewährt")
 else:
     print("falsch")
+
     </pre>
   </div>
 
@@ -490,12 +570,16 @@ else:
     <div class="snippet-title">19. b) Kalte Schulter</div>
     <button class="copy-btn" data-target="karol-19" onclick="copyCode(this)">Copy</button>
     <pre id="karol-19">
+# Das Programm reagiert unterschiedlich,
+# je nachdem, welcher Name eingegeben wird.
+
 A = input("Wer ist da?")
 
 if A == "Joel":
     print("Verrate mir endlich deinen Plan für meinen Geburtstag.")
 if A == "Maria":
     print("Ich möchte endlich mit auf Patrouille.")
+
     </pre>
   </div>
 
@@ -504,13 +588,19 @@ if A == "Maria":
     <div class="snippet-title">20. c) Zahlenraten 1</div>
     <button class="copy-btn" data-target="karol-20" onclick="copyCode(this)">Copy</button>
     <pre id="karol-20">
+# Einfaches Zahlenraten.
+# Die richtige Zahl ist 7.
+# Es wird nur gesagt, ob die Eingabe zu hoch oder zu niedrig ist.
+
 B = 7
 print("Rate meine Zahl")
 A = int(input())
+
 if A < B:
-    print("zu niedrig")
+   print("zu niedrig")
 if A > B:
     print("zu hoch")
+
     </pre>
   </div>
 
@@ -519,15 +609,19 @@ if A > B:
     <div class="snippet-title">21. d) Zahlenraten 2</div>
     <button class="copy-btn" data-target="karol-21" onclick="copyCode(this)">Copy</button>
     <pre id="karol-21">
+# Erweiterte Version mit elif und Erfolgsmeldung.
+
 print("Rate meine Zahl")
 A = 7
 B = int(input())
+
 if B > A:
     print("zu hoch")
 elif B < A:
     print("zu niedrig")
 else:
     print("WOW! MEGA!")
+
     </pre>
   </div>
 
@@ -536,6 +630,9 @@ else:
     <div class="snippet-title">22. e) Infizierte</div>
     <button class="copy-btn" data-target="karol-22" onclick="copyCode(this)">Copy</button>
     <pre id="karol-22">
+# Das Programm bestimmt anhand der Monate,
+# welche Art Infizierter vorliegt.
+
 print("Wie viele Monate infiziert?")
 A = int(input())
 
@@ -547,6 +644,7 @@ elif A > 2:
     print("Das ist ein Stalker.")
 else:
     print("Das ist ein Runner.")
+
     </pre>
   </div>
 
@@ -555,6 +653,9 @@ else:
     <div class="snippet-title">23. a) Regenbogen 1</div>
     <button class="copy-btn" data-target="karol-23" onclick="copyCode(this)">Copy</button>
     <pre id="karol-23">
+# Endlosschleife, bis die richtige Farbe eingegeben wird.
+# Nur "gelb" beendet die Schleife.
+
 print("Rate meine Lieblingsfarbe!")
 
 while True:
@@ -562,6 +663,7 @@ while True:
     if farbe == "gelb":
         print("Richtig!")
         break
+
     </pre>
   </div>
 
@@ -570,6 +672,8 @@ while True:
     <div class="snippet-title">24. b) Regenbogen 2</div>
     <button class="copy-btn" data-target="karol-24" onclick="copyCode(this)">Copy</button>
     <pre id="karol-24">
+# Wie Snippet 23, aber mit "Nein" bei falscher Eingabe.
+
 print("Rate meine Lieblingsfarbe!")
 
 while True:
@@ -579,6 +683,7 @@ while True:
         break
     else:
         print("Nein")
+
     </pre>
   </div>
 
@@ -587,6 +692,8 @@ while True:
     <div class="snippet-title">25. c) Spaßvogel</div>
     <button class="copy-btn" data-target="karol-25" onclick="copyCode(this)">Copy</button>
     <pre id="karol-25">
+# Menüsystem: A, B, C für Witze, x zum Beenden.
+
 print("A, B, C für Witze, x zum Beenden")
 
 while True:
@@ -601,6 +708,7 @@ while True:
     elif eingabe == "x":
         print("Tschüss")
         break
+
     </pre>
   </div>
 
@@ -609,6 +717,9 @@ while True:
     <div class="snippet-title">26. d) Dart (reloaded)</div>
     <button class="copy-btn" data-target="karol-26" onclick="copyCode(this)">Copy</button>
     <pre id="karol-26">
+# Dart-Spiel mit 201 Punkten.
+# Wenn man überwirft, passiert nichts außer einer Warnung.
+
 print("Spielstart bei 201 Punkten")
 punkte = 201
 
@@ -617,7 +728,7 @@ while True:
 
     if punkte - wurf < 0:
         print("Überworfen!")
-        continue
+        continue   # Runde wird wiederholt
 
     punkte -= wurf
 
@@ -626,6 +737,7 @@ while True:
         break
     else:
         print("Noch", punkte)
+
     </pre>
   </div>
 
@@ -634,19 +746,26 @@ while True:
     <div class="snippet-title">27. a) Meine Sprache 1</div>
     <button class="copy-btn" data-target="karol-27" onclick="copyCode(this)">Copy</button>
     <pre id="karol-27">
+# Dieses Programm überschreibt die Funktion "begruessung" mehrfach.
+# Jede neue Definition ersetzt die vorherige.
+
 def begruessung(name):
     print(f"Hallo{name}")
 
-begruessung("!")
-input()
+begruessung("!")   # Ausgabe: Hallo!
+
+input()            # Pause
+
 def begruessung(name):
     print(f"Schön {name}")
 
-begruessung("hier")
+begruessung("hier")   # Ausgabe: Schön hier
+
 def begruessung(name):
     print(f"Wirklich {name}")
 
-begruessung("schön")
+begruessung("schön")  # Ausgabe: Wirklich schön
+
     </pre>
   </div>
 
@@ -655,19 +774,25 @@ begruessung("schön")
     <div class="snippet-title">28. b) Meine Sprache 2</div>
     <button class="copy-btn" data-target="karol-28" onclick="copyCode(this)">Copy</button>
     <pre id="karol-28">
+# Auch hier wird die Funktion mehrfach überschrieben.
+
 def begruessung(name):
     print(f"Lalal{name}")
 
 begruessung("a")
+
 def begruessung(name):
     print(f"Es ist ein sonniger {name}")
+
 begruessung("Tag")
 
-input()
+input()   # Pause
+
 def begruessung(name):
     print(f"Ich mag die Sonne, aber Regen ist auch {name}")
 
 begruessung("toll.")
+
     </pre>
   </div>
 
@@ -676,12 +801,16 @@ begruessung("toll.")
     <div class="snippet-title">29. c) Schreiender Papagei</div>
     <button class="copy-btn" data-target="karol-29" onclick="copyCode(this)">Copy</button>
     <pre id="karol-29">
+# Dieses Programm wandelt Text in Großbuchstaben um
+# und gibt ihn in einem "schreienden" Format aus.
+
 def schreien(text):
-    upper = text.upper()
+    upper = text.upper()   # Alles groß
     print(f"GR {upper} GR GR")
 
 eingabe = input("Sprich mit dem schreienden Papagei")
 schreien(eingabe)
+
     </pre>
   </div>
 
@@ -690,6 +819,8 @@ schreien(eingabe)
     <div class="snippet-title">30. d) Geometrie</div>
     <button class="copy-btn" data-target="karol-30" onclick="copyCode(this)">Copy</button>
     <pre id="karol-30">
+# Dieses Programm berechnet Umfang und Fläche eines Rechtecks.
+
 def umfang(a, b):
     return 2 * (a + b)
 
@@ -698,9 +829,12 @@ def fläche(a, b):
 
 a = int(input("Seite a:"))
 b = int(input("Seite b:"))
+
 U = umfang(a, b)
 A = fläche(a, b)
+
 print(f"Das Rechteck mit a={a} und b={b} hat Umfang {U} und Fläche {A}.")
+
     </pre>
   </div>
 
@@ -709,6 +843,9 @@ print(f"Das Rechteck mit a={a} und b={b} hat Umfang {U} und Fläche {A}.")
     <div class="snippet-title">31. a) Patroullie 1</div>
     <button class="copy-btn" data-target="karol-31" onclick="copyCode(this)">Copy</button>
     <pre id="karol-31">
+# Das Programm prüft Sichtweite und Wind.
+# Wenn die Bedingungen schlecht sind, gibt es eine Warnung.
+
 sicht = int(input("Sicht (m):"))
 wind = int(input("Wind (km/h):"))
 
@@ -716,6 +853,7 @@ if sicht < 100 or wind > 35:
     print("Wetterwarnung! Alle Teams zurück!")
 else:
     print("Alles gut")
+
     </pre>
   </div>
 
@@ -724,18 +862,22 @@ else:
     <div class="snippet-title">32. b) Patroullie 2</div>
     <button class="copy-btn" data-target="karol-32" onclick="copyCode(this)">Copy</button>
     <pre id="karol-32">
+# Erweiterte Version mit zusätzlicher Bedingung.
+
 sicht = int(input("Sicht (m):"))
 wind = int(input("Wind (km/h):"))
 
 if sicht < 100 or wind > 35:
     print("Wetterwarnung! Alle Teams zurück!")
-elif sicht < 500 and wind > 25: 
+elif sicht < 500 and wind > 25:
     print("Gefahr! Heute nur kurze Route!")
 else:
     print("Alles gut")
+
     </pre>
   </div>
 
-  <!-- Snippet 33 -->
-  <div class="snippet">
-    <div class="snippet-title">33. c) Patroullie 3</div
+ </div> 
+</div>
+                                                
+     
