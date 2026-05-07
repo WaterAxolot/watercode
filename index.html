@@ -227,6 +227,12 @@ function toggleCategory(id) {
 
   <img src="watercode-logo-miku.png" class="miku-top">
 
+<script>
+function toggleCategory(id) {
+  const el = document.getElementById("category-" + id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
 
   
 <div class="right-box">
