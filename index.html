@@ -45,6 +45,7 @@ body {
   transition: 0.25s;
 }
 
+
 #searchInput:focus {
   border-color: #00eaff;
   box-shadow: 0 0 12px rgba(0,255,255,0.4);
@@ -137,6 +138,22 @@ body {
   margin-bottom: 20px;
 }
 
+.right-box {
+    position: absolute;
+    right: 40px;          /* Abstand vom rechten Rand */
+    top: 200px;           /* Abstand nach oben – kannst du ändern */
+    
+    background: #ffffff20; /* leichter transparenter Hintergrund */
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px); /* Glass-Effekt */
+    color: white;
+    font-size: 22px;
+    width: 200px;         /* Breite des Blocks */
+    text-align: center;
+}
+
+
 .snippet-title {
   font-size: 14px;
   font-weight: 600;
@@ -211,10 +228,17 @@ function toggleCategory(id) {
   <pre id="code-2"><!DOCTYPE html></pre>
 </div>
 
+<div class="right-box">
+    Hallo
+</div>
+
+  
 <div class="search-box">
   <input type="text" id="searchInput" placeholder="Suche..." onkeyup="showSuggestions()">
   <div id="suggestions" class="suggestions"></div>
 </div>
+
+  
 <div class="snippet">
   <div class="snippet-title">Willkommen bei WaterCode!  </div>
   <button class="copy-btn" data-target="karol-33" onclick="copyCode(this)">Copy</button>
