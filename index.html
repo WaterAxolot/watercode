@@ -160,7 +160,6 @@ body {
 
 
 
-
 .snippet-title {
   font-size: 14px;
   font-weight: 600;
@@ -196,6 +195,35 @@ pre {
   color: #e5e7eb;
 }
 
+
+.suggestions {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background: rgba(0,0,0,0.45);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.suggestions div {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.suggestions div:hover {
+  background: rgba(0,255,255,0.15);
+}
+
+
+
+    
 /* Kategorien */
 .category-title {
   background: none;
@@ -229,6 +257,44 @@ function toggleCategory(id) {
 window.onload = function() {
     window.scrollTo(0, 200);
 };
+</script>
+<script>
+const pages = {
+    "python": "#python",
+    "karol": "#karol",
+    "robot karol": "#karol",
+    "tipps": "#tipps",
+    "fonts": "#fonts",
+    "audiowide": "#fonts",
+    "html": "#html",
+    "css": "#css",
+    "javascript": "#javascript"
+};
+
+function showSuggestions() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const suggestionBox = document.getElementById("suggestions");
+
+    suggestionBox.innerHTML = "";
+    suggestionBox.style.display = "none";
+
+    if (input.length === 0) return;
+
+    const matches = Object.keys(pages).filter(key => key.includes(input));
+
+    if (matches.length === 0) return;
+
+    suggestionBox.style.display = "block";
+
+    matches.forEach(match => {
+        const div = document.createElement("div");
+        div.textContent = match;
+        div.onclick = () => {
+            window.location.href = pages[match];
+        };
+        suggestionBox.appendChild(div);
+    });
+}
 </script>
 
 <!-- Hero Right -->
@@ -287,18 +353,6 @@ Thank you for your patience and understanding while development continues.
 </h2>
 
 <div id="category-python" class="category-content">
-
-
-<!-- Snippet 000 -->
-<div class="snippet">
-  <div class="snippet-title">Hallo Welt</div>
-  <button class="copy-btn" data-target="python000" onclick="copyCode(this)">Copy</button>
-  <pre id="python000">
-# Das klassische erste Python-Programm.
-
-print("Hallo Welt")
-  </pre>
-</div>
 
 <!-- Snippet 001 -->
 <div class="snippet">
